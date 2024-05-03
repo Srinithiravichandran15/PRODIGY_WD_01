@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .collapsible {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      margin-bottom: 13px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      margin-bottom: 13px;
+      margin-top: -12px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      font-size: 24px;
+      font-family: "centuryy schoolbook";
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div>
+        <a href="Swtshp.html"> <img src="Wrong.png" style="height: 40px; width: 40px;margin-left: 10px; margin-top: 10px;">
+        </a>
+      </div>
+
+  <div class="about-section">
+    <h1>About Us</h1>
+    <p>Nestled amongst the hustle and bustle is our cafe, a haven designed to be more than just a place for a caffeine fix. 
+      We source our coffee beans with meticulous care, ensuring every cup is an aromatic journey. But coffee is just the beginning. 
+      Our talented bakers craft an array of delectable pastries daily, from flaky croissants to decadent cakes, offering a 
+      sweet counterpart to your favorite brew. Whether you need a quiet corner to catch up on work, a comfy spot for a meeting with 
+      friends, or a warm space to curl up with a good book, our cafe welcomes you with open arms. We believe in fostering a 
+      sense of community, a place where conversations flow as easily as the coffee, and the aroma of freshly baked goods 
+      fills you with a sense of comfort. So, come on in, unwind, recharge, and savor a little slice of happiness – we’d be 
+      delighted to serve you.
+    </p>
+  </div>
+
+  <h2 style="text-align:center">Meet our Team...!!!</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="Srinithi.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Srinithi</h2>
+          <p class="title">CEO & Founder</p>
+          <p>I'm the responsible for to Conceptualizes, builds, and leads the vision for the shop's success.</p>
+          <button type="button" class="collapsible">Contact</button>
+          <div class="content">
+            <p><i class="fa fa-envelope"></i> &nbsp; srinithi@gmail.com</p>
+            <p><i class="fa fa-phone"></i> &nbsp; +63 2547896325 </p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="Dhanus.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Dhanus</h2>
+          <p class="title">Director</p>
+          <p>My work as a coffee shop director oversees all aspects of the business, brewing profits and customer satisfaction.</p>
+          <button type="button" class="collapsible">Contact</button>
+          <div class="content">
+            <p><i class="fa fa-envelope"></i> &nbsp; dhanus@gmail.com</p>
+            <p><i class="fa fa-phone"></i> &nbsp; +63 3254789652 </p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="Shindhya.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Shindhya</h2>
+          <p class="title">Managing Director</p>
+          <p>My work as a managing director of a coffee shop oversees all aspects of the business for profitability and customer satisfaction.</p>
+          <button type="button" class="collapsible">Contact</button>
+          <div class="content">
+            <p><i class="fa fa-envelope"></i> &nbsp; shindhya@gmail.com</p>
+            <p><i class="fa fa-phone"></i> &nbsp; +63 8456321579 </p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="John.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>John</h2>
+          <p class="title">Cheif Baker</p>
+          <p>Being a coffee shop baker means waking up early to fill the air with delicious smells and satisfy customers' sweet tooths.</p>
+            <button type="button" class="collapsible">Contact</button>
+            <div class="content">
+              <p><i class="fa fa-envelope"></i> &nbsp; john@gmail.com</p>
+              <p><i class="fa fa-phone"></i> &nbsp; +63 6548953215 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="Jermy.jpg" alt="John"
+          style="width:100%">
+        <div class="container">
+          <h2>Jermey</h2>
+          <p class="title">Cheif Inventory Specialist</p>
+          <p>I'm always maintains the stock levels for ingredients, packaging materials, and finished products. And also
+            I handles ordering, receiving, and storing supplies.</p>
+            <button type="button" class="collapsible">Contact</button>
+            <div class="content">
+              <p><i class="fa fa-envelope"></i> &nbsp; jermey@gmail.com</p>
+              <p><i class="fa fa-phone"></i> &nbsp; +63 3259364529 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+      <img src="Nithin.jpg" alt="John" style="width:100%; height: 475px; object-fit: cover; object-position: 25% 25%;">
+        <div class="container">
+          <h2>Nithin</h2>
+          <p class="title">Cheif Barista</p>
+          <p>I'm here to prepare coffee drinks, teas, hot chocolate, and other beverages. Also creates specialty drinks
+            and manage the beverage counter.</p>
+            <button type="button" class="collapsible">Contact</button>
+            <div class="content">
+              <p><i class="fa fa-envelope"></i> &nbsp; nithinn@gmail.com</p>
+              <p><i class="fa fa-phone"></i> &nbsp; +63 8456321678 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+</body>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</html>
